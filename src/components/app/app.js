@@ -22,7 +22,7 @@ export default class App extends Component {
                 {label: 'Third post', important: false, id: 3},
             ]
         }
-        this.onDelete = this.deleteItem.bind(this);
+        this.deleteItem = this.deleteItem.bind(this);
     }
     deleteItem(id) {
         this.setState(({data}) => {
