@@ -14,11 +14,11 @@ const Block = styled.div`
     };
 `
 
-const AppHeader = () => {
+const AppHeader = ({ liked, allPosts }) => {
     return (
         <Block>
             <h1>Cnails</h1>
-            <h2>5 posts, 0 is liked</h2>
+            <h2>{allPosts} posts, {liked} is liked</h2>
         </Block>
     )
 }
